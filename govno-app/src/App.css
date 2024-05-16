@@ -1,0 +1,372 @@
+#main{
+  font-family: Test;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4em 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "section4";
+  color: #403930;
+  background: #FFEED9;
+}
+
+.header { grid-area: header; }
+
+.section1 { grid-area: Section1; }
+
+.section2 { grid-area: Section2; }
+
+.section3 { grid-area: Section3; }
+
+.section4 { grid-area: Section4; }
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #F9B892;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Test";
+  src: url("../public/fonts/Visitor Rus.ttf");
+}
+
+.nav-item{
+  color: #403930 ;
+}
+
+.home{
+  margin-left: 100px;
+  width: 58px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  position: absolute;
+}
+.home:hover{
+  color: #F9B892;
+}
+.Work{
+  margin-left: 180px;
+  width: 182px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  position: absolute;
+}
+.Work:hover{
+  color: #F9B892;
+}
+.About{
+  margin-left: 280px;
+  width: 109px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  position: absolute;
+}
+.About:hover{
+  color: #F9B892;
+}
+.Subscribe{
+  margin-left: 400px;
+  width: 59px;
+  height: 30px;
+  margin-top: 3px;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+}
+.Subscribe:hover{
+  color: #F9B892;
+}
+#section1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "txt photo";
+  background: #FFDDBF;
+}
+.txt1 { grid-area: txt;}
+.photo { grid-area: photo;}
+
+#section2{
+  background: #FFEED9;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "txt3 txt3"
+    "txt4 vidos";
+}
+.txt3 { grid-area: txt3; }
+.txt4 { grid-area: txt4; }
+.vidos{grid-area: vidos; }
+
+#section3{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "txt5 txt5"
+    "txt6 txt7";
+  background: #FFDDBF;
+}
+.txt5 { grid-area: txt5; }
+.txt6 { grid-area: txt6; }
+.txt7 { grid-area: txt7; }
+
+#section4{
+   display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 0.8fr ;
+  grid-template-areas:
+    "txt8 kartinka";
+    background: #FFEED9;
+}
+.txt8 { grid-area: txt8; }
+.kartinka { grid-area: kartinka; }
+
+.txt1{
+  width: 35%;
+  height: 25%;
+  margin-left: 50px;
+}
+
+.txt3{
+  font-size: 300%;
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 20px;
+  background: #FFDDBF;
+}
+.txt4{
+   font-size: 180%;
+  padding-top: 17px;
+  margin-left: 100px;
+}
+.txt5{
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+.txt6{
+  margin-left: 50px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+}
+.txt7{
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+}
+.txt8{
+  font-size: 45px;
+  text-align: left;
+  width: 40%;
+  height: 40%;
+  margin-left: 100px;
+}
+.privet{
+  font-size: 250%;
+  text-align: center;
+  width: 190%;
+  height: 45%;
+  margin-top: 60px;
+  margin-left: 50px;
+  background: #FFEED9;
+  border-radius: 20px;
+}
+.Sasha{
+  font-size: 250%;
+  width: 200px;
+  margin-left: 60px;
+  font-family: Test;
+}
+.photo{
+  width: 90%;
+}
+.privet2{
+  font-size: 250%;
+  text-align: center;
+   width: 190%;
+  height: 45%;
+  margin-top: 10px;
+  margin-left: 50px;
+  background: #E95A52;
+  border-radius: 20px;
+  transition: transform 0.6s;
+}
+.privet2:hover{
+  transform: scale(1.2);
+}
+.kartinka{
+  margin-top: 30px;
+  width: 80%;
+}
+.vidos{
+  width: 40%;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.silka{
+  text-decoration: none;
+  color: #403930;
+}
+.telegram{
+  transition: transform 0.1s;
+  width: 9%;
+  margin-left: 100px;
+}
+
+.telegram:hover{
+   transform: scale(1.2);
+}
+
+.youtube{
+  width: 7%;
+  margin-left: 400px;
+  position: absolute;
+  transition: transform 0.1s;
+}
+
+.youtube:hover{
+  transform: scale(1.2);
+}
+
+.vk{
+  transition: transform 0.1s;
+  width: 7%;
+  margin-left: 160px;
+  position: absolute;
+}
+
+.vk:hover{
+   transform: scale(1.2);
+}
+
+.silka:hover{
+  color: #F9B892;
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .vidos{
+      width: 60%;
+  }
+   #main{
+    margin-left: -60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2em 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "section3"
+      "section4";
+    color: #403930;
+    background: #FFEED9;
+    }
+  .header { grid-area: header; }
+
+.section1 { grid-area: Section1; }
+
+.section2 { grid-area: Section2; }
+
+.section3 { grid-area: Section3; }
+
+.section4 { grid-area: Section4; }
+  .socseti{
+    margin-top: 100px;
+  }
+}
+@media (min-width: 350px) and (max-width: 760px) {
+  #main{
+    margin-left: -60px;
+    display: grid;
+    grid-template-columns: 0.2fr;
+    grid-template-rows: 2em 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "section3"
+      "section4";
+    color: #403930;
+    background: #FFEED9;
+  }
+
+.header { grid-area: header; }
+
+.section1 { grid-area: Section1; }
+
+.section2 { grid-area: Section2; }
+
+.section3 { grid-area: Section3; }
+
+.section4 { grid-area: Section4; }
+  .vidos{
+    width: 50%;
+    height: auto;
+    margin-left: -1px;
+  }
+  .privet{
+    font-size: 20px;
+  }
+  .privet2{
+    font-size: 20px;
+  }
+  .Sasha{
+    font-size: 20px;
+  }
+  .txt3{
+    font-size: 20px;
+  }
+  .txt4{
+    font-size: 11px;
+  }
+  .txt5{
+    font-size: 20px;
+  }
+  .txt6{
+     font-size: 11px;
+  }
+  .txt7{
+     font-size: 11px;
+  }
+  .txt8{
+     font-size: 20px;
+  }
+  .kartinka{
+    width: 150%;
+  }
+  .socseti{
+    margin-top: 100px;
+  }
+}
